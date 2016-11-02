@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{2AEBEC1F-915B-B4D1-60E0-C1BAA8D67B55}") = "MORPHI Transform", "Assembly-CSharp.csproj", "{739C116F-D31B-42FE-4E31-C2909F8708D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{739C116F-D31B-42FE-4E31-C2909F8708D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{739C116F-D31B-42FE-4E31-C2909F8708D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{739C116F-D31B-42FE-4E31-C2909F8708D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{739C116F-D31B-42FE-4E31-C2909F8708D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
