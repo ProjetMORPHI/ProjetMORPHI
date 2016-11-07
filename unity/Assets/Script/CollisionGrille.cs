@@ -21,13 +21,13 @@ public class CollisionGrille : MonoBehaviour {
 		if (joueurEtat.etatActif != GestionEtat.Etat.Solide) {
 
 			grilles [0].enabled = false;
-			grilles [0].enabled = false;
+			grilles [1].enabled = false;
 		}
 
 		else {
 
 			grilles [0].enabled = true;
-			grilles [0].enabled = true;
+			grilles [1].enabled = true;
 		}
 		//Debug.Log (joueurEtat.etatActif);
 			
