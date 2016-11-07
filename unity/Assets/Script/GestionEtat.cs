@@ -21,19 +21,25 @@ public class GestionEtat : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.Alpha1)){
+
 			//Debug.Log("appui 1");
+
 			StartCoroutine(transfoSolide ());
 		}
 
 		if(Input.GetKeyDown(KeyCode.Alpha2)){
+
 			//Debug.Log("appui 2");
 			StartCoroutine(transfoGazeux ());
+
 		}
 	}
 
 	//fonction pour la Transformation temporaire vers l'état solide
 	IEnumerator transfoSolide(){
+
 		//Debug.Log ("Transfo solide");
+
 		if (etatActif != Etat.Solide) {
 			//on passe à l'état solide
 			etatActif = Etat.Solide;
@@ -44,6 +50,8 @@ public class GestionEtat : MonoBehaviour {
 			etatActif = Etat.Liquide;
 		}
 	}
+
+
 
 	//fonction pour la Transformation temporaire vers l'état gazeux
 	IEnumerator transfoGazeux(){
