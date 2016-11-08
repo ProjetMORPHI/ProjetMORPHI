@@ -26,6 +26,7 @@ public class ColliderEnemmie : MonoBehaviour {
 
 			//Debug.Log (joueurEtat.etatActif);
 			animEnnemie.Play ();
+			//Debug.Log("debo morir");
 		}
 			
 	}
