@@ -2,19 +2,23 @@
 using System.Collections;
 using System;
 
-public class Animation_Porte : MonoBehaviour {
+public class Animation_Porte_Ennemies : MonoBehaviour {
 
 
 	public Camera monCamera;
-	public Animation monAnimation;
 	public int nombreEnnemies;
+
+
+	private Animation monAnimation;
+	private bool animPlayed;
 
 	// Use this for initialization
 	void Start () {
 	
 		//ouvrePort = false;
-		//animPorte = GetComponent<Animation> ();
-		nombreEnnemies = 1;
+		monAnimation = GetComponent<Animation> ();
+		animPlayed = false;
+		//nombreEnnemies = 1;
 
 
 	}
@@ -22,17 +26,18 @@ public class Animation_Porte : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		//Debug.Log (nombreEnnemies);
 
-		if (nombreEnnemies == 0) {
-			
-			if (!monAnimation.isPlaying) {
+		if (nombreEnnemies == 0 && !animPlayed) {
 
-				monCamera.depth = 0;
-				//Debug.Log ("hola");
-			}
-
+			monCamera.depth = 2;
+			monAnimation.Play ();
+			animPlayed = true;
 		}
+		if (!monAnimation.isPlaying) {
 
+			monCamera.depth = 0;
+		}
 
 	}
 
@@ -46,10 +51,4 @@ public class Animation_Porte : MonoBehaviour {
 			
 	}
 
-	public void ennemiTue(){
-
-		nombreEnnemies--;
-
-	}
-		
 }
