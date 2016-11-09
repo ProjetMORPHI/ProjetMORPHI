@@ -1,0 +1,107 @@
+﻿{"frames": {
+
+"Liquide_Marche0000":
+{
+	"frame": {"x":5,"y":5,"w":555,"h":509},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":555,"h":509},
+	"sourceSize": {"w":555,"h":509}
+},
+"Liquide_Marche0001":
+{
+	"frame": {"x":565,"y":5,"w":555,"h":509},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":555,"h":509},
+	"sourceSize": {"w":555,"h":509}
+},
+"Liquide_Marche0002":
+{
+	"frame": {"x":1125,"y":5,"w":555,"h":509},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":555,"h":509},
+	"sourceSize": {"w":555,"h":509}
+},
+"Liquide_Marche0003":
+{
+	"frame": {"x":5,"y":519,"w":555,"h":509},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":555,"h":509},
+	"sourceSize": {"w":555,"h":509}
+},
+"Liquide_Marche0004":
+{
+	"frame": {"x":565,"y":519,"w":555,"h":509},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":555,"h":509},
+	"sourceSize": {"w":555,"h":509}
+},
+"Liquide_Marche0005":
+{
+	"frame": {"x":1125,"y":519,"w":555,"h":509},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":555,"h":509},
+	"sourceSize": {"w":555,"h":509}
+},
+"Liquide_Marche0006":
+{
+	"frame": {"x":5,"y":1033,"w":555,"h":509},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":555,"h":509},
+	"sourceSize": {"w":555,"h":509}
+},
+"Liquide_Marche0007":
+{
+	"frame": {"x":565,"y":1033,"w":555,"h":509},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":555,"h":509},
+	"sourceSize": {"w":555,"h":509}
+},
+"Liquide_Marche0008":
+{
+	"frame": {"x":1125,"y":1033,"w":555,"h":509},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":555,"h":509},
+	"sourceSize": {"w":555,"h":509}
+},
+"Liquide_Marche0009":
+{
+	"frame": {"x":5,"y":1547,"w":555,"h":509},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":555,"h":509},
+	"sourceSize": {"w":555,"h":509}
+},
+"Liquide_Marche0010":
+{
+	"frame": {"x":565,"y":1547,"w":555,"h":509},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":555,"h":509},
+	"sourceSize": {"w":555,"h":509}
+},
+"Liquide_Marche0011":
+{
+	"frame": {"x":1125,"y":1547,"w":555,"h":509},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":555,"h":509},
+	"sourceSize": {"w":555,"h":509}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "15.2.0.66",
+	"image": "Liquide_SPSheet_Marche.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":4096},
+	"scale": "1"
+}
+}
