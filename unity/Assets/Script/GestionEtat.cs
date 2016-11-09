@@ -21,26 +21,74 @@ public class GestionEtat : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.Alpha1)){
-
+			/*StopCoroutine("transfoSolide");
 			//Debug.Log("appui 1");
+			//StartCoroutine(transfoSolide ());
+			StartCoroutine("transfoSolide");*/
 
-			StartCoroutine(transfoSolide ());
+			transfoLiquide ();
 		}
 
 		if(Input.GetKeyDown(KeyCode.Alpha2)){
-
+			/*StopCoroutine("transfoGazeux");
 			//Debug.Log("appui 2");
-			StartCoroutine(transfoGazeux ());
+			//StartCoroutine(transfoGazeux ());
+			StartCoroutine("transfoGazeux");*/
+
+			transfoSolide();
+
+		}
+
+		if(Input.GetKeyDown(KeyCode.Alpha3)){
+			/*StopCoroutine("transfoGazeux");
+			//Debug.Log("appui 2");
+			//StartCoroutine(transfoGazeux ());
+			StartCoroutine("transfoGazeux");*/
+
+			transfoGazeux();
 
 		}
 	}
 
 	//fonction pour la Transformation temporaire vers l'état solide
-	IEnumerator transfoSolide(){
+	void transfoSolide(){
 
 		//Debug.Log ("Transfo solide");
 
 		if (etatActif != Etat.Solide) {
+			
+			//on passe à l'état solide
+			etatActif = Etat.Solide;
+		}
+	}
+
+
+
+	//fonction pour la Transformation temporaire vers l'état gazeux
+	void transfoGazeux(){
+		
+		if (etatActif != Etat.Gazeux) {
+
+			//on passe à l'état gazeux
+			etatActif = Etat.Gazeux;
+		}
+	}
+
+	//fonction pour la Transformation temporaire vers l'état liquide
+	void transfoLiquide(){
+
+		if (etatActif != Etat.Liquide) {
+
+			//on passe à l'état liquide
+			etatActif = Etat.Liquide;
+		}
+	}
+
+	//fonction avec temps
+	//IEnumerator transfoSolide(){
+
+
+		/*if (etatActif != Etat.Solide) {
 			//on passe à l'état solide
 			etatActif = Etat.Solide;
 
@@ -49,12 +97,12 @@ public class GestionEtat : MonoBehaviour {
 
 			etatActif = Etat.Liquide;
 		}
-	}
+	}*/
 
 
 
 	//fonction pour la Transformation temporaire vers l'état gazeux
-	IEnumerator transfoGazeux(){
+	/*IEnumerator transfoGazeux(){
 		//Debug.Log ("Transfo gazeux");
 		//on passe à l'état gazeux
 		etatActif = Etat.Gazeux;
@@ -63,5 +111,5 @@ public class GestionEtat : MonoBehaviour {
 		yield return new WaitForSeconds(tempsTransfo);
 		etatActif = Etat.Liquide;
 		//}
-	}
+	}*/
 }
