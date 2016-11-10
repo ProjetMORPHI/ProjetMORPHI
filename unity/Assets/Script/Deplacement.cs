@@ -20,6 +20,7 @@ public class Deplacement : MonoBehaviour {
 
 		persoRb = GetComponent<Rigidbody>();
 		joueurEtat = gameObject.GetComponent<GestionEtat> ();
+
 	}
 	
 	// Update is called once per frame
@@ -68,10 +69,10 @@ public class Deplacement : MonoBehaviour {
 			velAux.x = Input.GetAxis ("Horizontal") * velLiquide;
 			persoRb.velocity = velAux;
 			//Habilité de saut seulement dans le état liquide
-			if (Input.GetKeyDown ("space")) {
+			/*if (Input.GetKeyDown ("space")) {
 
 				persoRb.AddForce(Vector3.up*5,ForceMode.Impulse);
-			}
+			}*/
 			persoRb.useGravity = true;
 			break;
 

@@ -40,15 +40,5 @@ public class Animation_Porte_Ennemies : MonoBehaviour {
 		}
 
 	}
-
-	void OnTriggerEnter(Collider monCollider){
-
-		if (monCollider.gameObject.tag == "Joueur") {
-
-			monCamera.depth = 2;
-			monAnimation.Play ();
-		}
-			
-	}
-
+		
 }
