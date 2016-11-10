@@ -3,7 +3,7 @@ using System.Collections;
 
 public class EnnemiDestroy : MonoBehaviour {
 
-	public Animation_Porte_Ennemies scriptAnimPorte;
+	//public Animation_Porte_Ennemies scriptAnimPorte;
 
 
 	private int ennemiesRestant;
@@ -20,13 +20,12 @@ public class EnnemiDestroy : MonoBehaviour {
 
 	public void destroyEnnemi(){
 
-
-		//Debug.Log (scriptAnimPorte.nombreEnnemies);
-		//scriptAnimPorte.nombreEnnemies = scriptAnimPorte.nombreEnnemies--;
+       
+		GameObject porte = GameObject.FindGameObjectWithTag("Porte1");
+		Animation_Porte_Ennemies scriptAnimPorte = porte.GetComponent<Animation_Porte_Ennemies>();
 		ennemiesRestant = scriptAnimPorte.nombreEnnemies;
 		ennemiesRestant--;
 		scriptAnimPorte.nombreEnnemies = ennemiesRestant;
-		//Debug.Log (scriptAnimPorte.nombreEnnemies);
 		Destroy(this.transform.parent.gameObject);//une fois que l'animation est fini on detruit l'ennemi
 	}
 
