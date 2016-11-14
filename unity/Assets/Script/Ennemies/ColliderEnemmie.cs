@@ -23,7 +23,7 @@ public class ColliderEnemmie : MonoBehaviour {
 	void OnTriggerEnter(Collider monCollider){
 
         GestionEtat joueurEtat = monCollider.GetComponent<GestionEtat>();
-        Debug.Log(joueurEtat.etatActif);
+        //Debug.Log(joueurEtat.etatActif);
 
 
       

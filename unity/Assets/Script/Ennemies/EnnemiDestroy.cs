@@ -22,11 +22,11 @@ public class EnnemiDestroy : MonoBehaviour {
 
        
 		GameObject porte = GameObject.FindGameObjectWithTag("Porte1");
-		Animation_Porte_Ennemies scriptAnimPorte = porte.GetComponent<Animation_Porte_Ennemies>();
+		AnimationPorteEnnemies scriptAnimPorte = porte.GetComponent<AnimationPorteEnnemies>();
 		ennemiesRestant = scriptAnimPorte.nombreEnnemies;
 		ennemiesRestant--;
 		scriptAnimPorte.nombreEnnemies = ennemiesRestant;
-		Destroy(this.transform.parent.gameObject);//une fois que l'animation est fini on detruit l'ennemi
+		Destroy(this.transform.parent.gameObject);//une fois que l'animation est fini on detruit l'ennemi*/
 	}
 
 }
