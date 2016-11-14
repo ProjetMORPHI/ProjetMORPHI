@@ -28,7 +28,5 @@ public class ButtonAction : MonoBehaviour {
 		bool etatButton = scriptAnimPorte.buttonOK;
 		etatButton = true;
 		scriptAnimPorte.buttonOK = true;
-		//Collider smashColl = //Debug.Log (smashColl);
-		//Debug.Log(button.transform.FindChild("Smash_Collider").gameObject);
 	}
 }

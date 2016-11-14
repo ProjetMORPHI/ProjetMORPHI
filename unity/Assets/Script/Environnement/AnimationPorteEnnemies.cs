@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class Animation_Porte_Ennemies : MonoBehaviour {
+public class AnimationPorteEnnemies : MonoBehaviour {
 
 
 	public Camera monCamera;
