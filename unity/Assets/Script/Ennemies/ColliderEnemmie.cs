@@ -30,6 +30,7 @@ public class ColliderEnemmie : MonoBehaviour {
 
 		if (monCollider.gameObject.tag == "Joueur" && joueurEtat.etatActif == GestionEtat.Etat.Solide) {
 
+
 			//Debug.Log (joueurEtat.etatActif);
 			animEnnemie.Play ();
 			//Debug.Log("debo morir");
