@@ -1,0 +1,8 @@
+Controles:
+Déplacement à gauche: Flèche gauche
+Déplacement à droite: flèche droite
+
+Transformation:
+État liquide: touche numérique 1
+État solide: touche numérique 2
+État gazeux: touche numérique 3
