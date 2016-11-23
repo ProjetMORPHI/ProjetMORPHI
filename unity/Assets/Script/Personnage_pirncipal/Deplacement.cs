@@ -96,29 +96,25 @@ public class Deplacement : MonoBehaviour {
 
 
 
-			//vitesse de deplacement Horizontal en gazeux
+			//vitesse de deplacement Vertical en gazeux
 			if (Input.GetAxis ("Vertical") >= 0) {
 
 				persoRb.AddForce(Vector3.up*velGazeuxUP*Time.deltaTime,ForceMode.Impulse);
 				persoRb.useGravity = false;
-				/*velAuxUp.y = velGazeuxUP;
-				persoRb.velocity = velAuxUp;*/
 
 			}
-			//Debug.Log (persoRb.velocity.y);
-			//vitesse de deplacement Horizontal en gazeux
-			velAux.x = Input.GetAxis ("Horizontal") * velGazeux;
-			persoRb.velocity = velAux;
+
+			else {
+
+				velAux.y = 0;
+				persoRb.velocity = velAux;
+			}
 
 			break;
 
 
 		}
-
-
-		//persoRb.velocity = velAux;
-		//Vector3 velAux = persoRb.velocity;
-
+			
 	}
 }
 
