@@ -1,0 +1,30 @@
+sources des sons
+
+freesound: 
+
+étouffement 1: https://www.freesound.org/people/braffe2/sounds/83685/
+etouffement 2 https://www.freesound.org/people/Reitanna/sounds/252243/
+etouffement 3 https://www.freesound.org/people/Reitanna/sounds/252236/
+liquide 1 : https://www.freesound.org/people/paespedro/sounds/174718/
+liquide 2 : https://www.freesound.org/people/willy_ineedthatapp_com/sounds/167345/
+liquide 3 : https://www.freesound.org/people/junggle/sounds/274065/
+musique d'ambiance 1 : https://www.freesound.org/people/djgriffin/sounds/172561/
+musique d'ambiance 2 : https://www.freesound.org/people/edtijo/sounds/240376/
+musique d'ambiance 3 : https://www.freesound.org/people/vikuserro/sounds/265549/
+musique d'ambiance 4 :https://www.freesound.org/people/Magntron/sounds/335571/ 
+noyade : https://www.freesound.org/people/Robinhood76/sounds/96742/
+roche 1 : https://www.freesound.org/people/tran5ient/sounds/190096/
+roche 2 : https://www.freesound.org/people/gmtechb/sounds/49171/
+roche 3 : https://www.freesound.org/people/worthahep88/sounds/319226/
+roche 4 : https://www.freesound.org/people/worthahep88/sounds/319227/
+roche qui tombe 1 : https://www.freesound.org/people/yottasounds/sounds/232137/
+roche qui tombe 2 : https://www.freesound.org/people/Timbre/sounds/140271/
+vent : https://www.freesound.org/people/Leandros.Ntounis/sounds/163607/
+vent 2 : https://www.freesound.org/people/jorge0000/sounds/361053/
+vent 3 : https://www.freesound.org/people/macdaddyno1/sounds/349388/
+vent 4 : https://www.freesound.org/people/dmyra/sounds/105012/
+vent 5 : https://www.freesound.org/people/juryduty/sounds/185070/
+  
+autres: 
+
+bruit d'effervesence: http://www.universal-soundbank.com/medecine-2.htm
