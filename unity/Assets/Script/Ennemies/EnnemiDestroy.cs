@@ -9,21 +9,23 @@ public class EnnemiDestroy : MonoBehaviour {
 
 	private int ennemiesRestant;
 	private Vector3 enemieForce;
+
 	public GameObject HandleVie;
+	public float dommageEnnemie;
 	// Use this for initialization
 	void Start () {
-	
+
 		//ennemiesRestant = scriptAnimPorte.nombreEnnemies;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
 	public void destroyEnnemi(){
 
-       
+
 		GameObject porte = GameObject.FindGameObjectWithTag("Porte1");
 		AnimationPorteEnnemies scriptAnimPorte = porte.GetComponent<AnimationPorteEnnemies>();
 		ennemiesRestant = scriptAnimPorte.nombreEnnemies;
@@ -50,12 +52,15 @@ public class EnnemiDestroy : MonoBehaviour {
 				if (HandleVie.activeSelf == false) {//si le jouer a tout ce energie au complet
 
 					HandleVie.SetActive (true);//activation de handle pour simuler la premiere touche
+					GameObject vie = GameObject.FindGameObjectWithTag("BarVie") as GameObject;
+					Scrollbar barVie = vie.GetComponent<Scrollbar> ();
+					barVie.size = barVie.size + dommageEnnemie;
 				} 
 				else 
 				{//si le joueur a deja de dommage on va ajouter plus de dommage
 					GameObject vie = GameObject.FindGameObjectWithTag("BarVie") as GameObject;
 					Scrollbar barVie = vie.GetComponent<Scrollbar> ();
-					barVie.size = barVie.size + 0.25f;
+					barVie.size = barVie.size + dommageEnnemie;
 
 				}
 			}

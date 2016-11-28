@@ -3,6 +3,9 @@ using System.Collections;
 
 public class ButtonAction : MonoBehaviour {
 
+
+	public Material buttonBasOk;//texture quand le button est appuyé
+	public MeshRenderer buttonBas;//Mesh renderer component du game object button bas
 	// Use this for initialization
 	void Start () {
 	
@@ -28,5 +31,9 @@ public class ButtonAction : MonoBehaviour {
 		bool etatButton = scriptAnimPorte.buttonOK;
 		etatButton = true;
 		scriptAnimPorte.buttonOK = true;
+
+		buttonBas.material = buttonBasOk;
+
+
 	}
 }
