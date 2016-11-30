@@ -16,6 +16,6 @@ public class Tourniquet : MonoBehaviour {
 
 		Vector3 positionPivot = pivot.transform.position;
 
-		//transform.RotateAround(positionPivot,positionPivot.z,45*Time.deltaTime); //fait pivoter le game object de 45 degrés par seconde
+		transform.RotateAround(positionPivot,positionPivot.z,45*Time.deltaTime); //fait pivoter le game object de 45 degrés par seconde
 	}
 }
