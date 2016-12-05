@@ -12,6 +12,7 @@ public class EnnemiDestroy : MonoBehaviour {
 
 	public GameObject HandleVie;
 	public float dommageEnnemie;
+	public string tagPorte;
 	// Use this for initialization
 	void Start () {
 
@@ -26,7 +27,7 @@ public class EnnemiDestroy : MonoBehaviour {
 	public void destroyEnnemi(){
 
 
-		GameObject porte = GameObject.FindGameObjectWithTag("Porte1");
+		GameObject porte = GameObject.FindGameObjectWithTag(tagPorte);
 		AnimationPorteEnnemies scriptAnimPorte = porte.GetComponent<AnimationPorteEnnemies>();
 		ennemiesRestant = scriptAnimPorte.nombreEnnemies;
 		ennemiesRestant--;

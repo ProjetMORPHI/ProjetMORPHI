@@ -6,6 +6,10 @@ public class ButtonAction : MonoBehaviour {
 
 	public Material buttonBasOk;//texture quand le button est appuyé
 	public MeshRenderer buttonBas;//Mesh renderer component du game object button bas
+
+	public string tagButton;
+	public string tagPorte;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -18,14 +22,14 @@ public class ButtonAction : MonoBehaviour {
 
 	public void destroyCollider(){
 
-		GameObject button = GameObject.FindGameObjectWithTag("Button_Porte2");
+		GameObject button = GameObject.FindGameObjectWithTag(tagButton);
 		GameObject objetSmash = button.transform.GetChild(2).gameObject;
 
 		Collider smashColl = objetSmash.GetComponent<Collider> ();
 		smashColl.enabled = false;
 
 
-		GameObject porte = GameObject.FindGameObjectWithTag("Porte2");
+		GameObject porte = GameObject.FindGameObjectWithTag(tagPorte);
 		AnimationPorteButton scriptAnimPorte = porte.GetComponent<AnimationPorteButton>();
 
 		bool etatButton = scriptAnimPorte.buttonOK;

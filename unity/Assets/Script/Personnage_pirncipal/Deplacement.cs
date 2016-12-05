@@ -20,7 +20,7 @@ public class Deplacement : MonoBehaviour {
 
 		persoRb = GetComponent<Rigidbody>();
 		joueurEtat = gameObject.GetComponent<GestionEtat> ();
-		Time.timeScale = 0;
+
 
 	}
 	
