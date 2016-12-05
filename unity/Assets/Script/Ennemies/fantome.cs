@@ -7,8 +7,8 @@ public class fantome : MonoBehaviour {
 
 	private float posX; // la position initial sur l'axe x de fantome
 
-	private float posMax=2.0f; //la limite maximum que fantôme peut se déplacer 
-	private float posMin=-2.0f;//la limite minimum que fantôme peut se déplacer 
+	private float posMax=6.0f; //la limite maximum que fantôme peut se déplacer 
+	private float posMin=-6.0f;//la limite minimum que fantôme peut se déplacer 
 
 	private float unitMax=0.0f; // La variable pour calculer la position maximum de fantôme 
 	private float unitMin=0.0f; // La variable pour calculer la position minimum de fantôme 
@@ -34,7 +34,7 @@ public class fantome : MonoBehaviour {
 
 		if (positionPositiveX == true) // la condition pour ajouter à la position x de fantôme 
 		{
-			posX += Time.deltaTime;
+			posX += Time.deltaTime/2;
 			unitMax+= Time.deltaTime;
 
 			if (unitMax >= posMax)
@@ -46,7 +46,7 @@ public class fantome : MonoBehaviour {
 		}
 		if (positionPositiveX == false) //la condition pour diminuer de la position x de fantôme
 		{
-			posX -= Time.deltaTime;
+			posX -= Time.deltaTime/2;
 			unitMin-= Time.deltaTime;
 
 			if (unitMin <= posMin)
