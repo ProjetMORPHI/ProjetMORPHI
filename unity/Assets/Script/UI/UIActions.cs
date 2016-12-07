@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class UIActions : MonoBehaviour {
 
@@ -10,8 +11,12 @@ public class UIActions : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		Time.timeScale = 0;
-	
+		Scene scene = SceneManager.GetActiveScene ();
+		if (scene.name == "Tutoriel")
+		{
+			Time.timeScale = 0;
+		}
+
 	}
 	
 	// Update is called once per frame
@@ -24,6 +29,7 @@ public class UIActions : MonoBehaviour {
 
 		canvasActif.SetActive (false);
 		canvasSuivant.SetActive (true);
+		Time.timeScale = 1;
 
 	}
 
