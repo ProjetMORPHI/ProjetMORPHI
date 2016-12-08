@@ -19,16 +19,9 @@ public class ButtonCollider : MonoBehaviour {
 	void OnTriggerEnter(Collider monCollider){
 
 		GestionEtat joueurEtat = monCollider.GetComponent<GestionEtat>();
-		Debug.Log(joueurEtat.etatActif);
-
-
-
-
 		if (monCollider.gameObject.tag == "Joueur" && joueurEtat.etatActif == GestionEtat.Etat.Solide) {
 
-			//Debug.Log (joueurEtat.etatActif);
 			animButton.Play ();
-			//Debug.Log("debo morir");
 		}
 
 
