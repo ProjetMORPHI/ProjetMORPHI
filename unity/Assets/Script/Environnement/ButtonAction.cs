@@ -7,8 +7,8 @@ public class ButtonAction : MonoBehaviour {
 	public Material buttonBasOk;//texture quand le button est appuyé
 	public MeshRenderer buttonBas;//Mesh renderer component du game object button bas
 
-	public string tagButton;
-	public string tagPorte;
+	public string tagButton;//Le tag de button lui meme
+	public string tagPorte;//a quelle porte est ce que mon button est lié
 
 	// Use this for initialization
 	void Start () {
@@ -22,22 +22,19 @@ public class ButtonAction : MonoBehaviour {
 
 	public void destroyCollider(){
 
-		GameObject button = GameObject.FindGameObjectWithTag(tagButton);
-		GameObject objetSmash = button.transform.GetChild(2).gameObject;
+		GameObject button = GameObject.FindGameObjectWithTag(tagButton);//aller chcerche le objet button au complete
+		GameObject objetSmash = button.transform.GetChild(2).gameObject;//obtienne le collider du button pour les desactiver
 
 		Collider smashColl = objetSmash.GetComponent<Collider> ();
 		smashColl.enabled = false;
 
 
-		GameObject porte = GameObject.FindGameObjectWithTag(tagPorte);
+		GameObject porte = GameObject.FindGameObjectWithTag(tagPorte);//obtienne la porte qui est lié à ce button
 		AnimationPorteButton scriptAnimPorte = porte.GetComponent<AnimationPorteButton>();
-
-		bool etatButton = scriptAnimPorte.buttonOK;
-		etatButton = true;
-		scriptAnimPorte.buttonOK = true;
-
-		buttonBas.material = buttonBasOk;
-
+		int buttonApp = scriptAnimPorte.qBouttons;
+		buttonApp--;//indique que il a un button moins à appuyer
+		scriptAnimPorte.qBouttons = buttonApp; // envoi le nouveau valeur au scriptd de animation de la porte
+		buttonBas.material = buttonBasOk;//change la texture dus bas du button
 
 	}
 }
