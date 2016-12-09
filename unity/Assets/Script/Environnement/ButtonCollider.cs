@@ -21,7 +21,7 @@ public class ButtonCollider : MonoBehaviour {
 		GestionEtat joueurEtat = monCollider.GetComponent<GestionEtat>();
 		if (monCollider.gameObject.tag == "Joueur" && joueurEtat.etatActif == GestionEtat.Etat.Solide) {
 
-			animButton.Play ();
+			animButton.Play ();//la animation de appuyer le button fonctionne seulement si le personnage est en état solide
 		}
 
 

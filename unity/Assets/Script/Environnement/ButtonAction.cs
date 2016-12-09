@@ -26,7 +26,7 @@ public class ButtonAction : MonoBehaviour {
 		GameObject objetSmash = button.transform.GetChild(2).gameObject;//obtienne le collider du button pour les desactiver
 
 		Collider smashColl = objetSmash.GetComponent<Collider> ();
-		smashColl.enabled = false;
+		smashColl.enabled = false;//desactiver le collider de boutton pour eviter des bugs
 
 
 		GameObject porte = GameObject.FindGameObjectWithTag(tagPorte);//obtienne la porte qui est lié à ce button
@@ -35,6 +35,14 @@ public class ButtonAction : MonoBehaviour {
 		buttonApp--;//indique que il a un button moins à appuyer
 		scriptAnimPorte.qBouttons = buttonApp; // envoi le nouveau valeur au scriptd de animation de la porte
 		buttonBas.material = buttonBasOk;//change la texture dus bas du button
+
+		AnimationPorteButtonFerme scriptAnimPorteFerme = porte.GetComponent<AnimationPorteButtonFerme> ();
+		if (scriptAnimPorteFerme != null) {
+
+			scriptAnimPorteFerme.porteOuverte = true;// On verifie si la porte liée doit se fermer
+
+		}
+
 
 	}
 }

@@ -19,7 +19,7 @@ public class Elevateur : MonoBehaviour {
 	
 		if (monCollider.gameObject.tag == "Joueur") {
 
-			animElev.Play ();
+			animElev.Play ();//si le collider est touché par le personnage, l'ascenseur monte
 		}
 
 

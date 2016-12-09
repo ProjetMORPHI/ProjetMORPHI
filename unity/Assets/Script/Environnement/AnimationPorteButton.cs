@@ -5,9 +5,10 @@ public class AnimationPorteButton : MonoBehaviour {
 
 	public Camera monCamera;//contienne la camera qui montre l'animation de overture de la porte
 	public int qBouttons;// quantité des bouttons à apuuyez pour ouvrir la porte qui oeuvre la porte
+	public bool animPlayed;// est-ce que l'animation a deja joué?
 
 	private Animation monAnimation; //animation jouer quand la porte est ouverte
-	private bool animPlayed;// est-ce que l'animation a deja joué?
+
 
 	// Use this for initialization
 	void Start () {
