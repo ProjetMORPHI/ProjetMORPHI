@@ -99,7 +99,7 @@ public class Deplacement : MonoBehaviour {
 			//vitesse de deplacement Vertical en gazeux
 			if (Input.GetAxis ("Vertical") >= 0) {
 
-				persoRb.AddForce(Vector3.up*velGazeuxUP*Time.deltaTime,ForceMode.Impulse);
+				persoRb.AddForce(Vector3.up*velGazeuxUP*Time.deltaTime,ForceMode.Impulse);//impulser vers l:haut en état gazeux
 				persoRb.useGravity = false;
 
 			}
@@ -107,7 +107,7 @@ public class Deplacement : MonoBehaviour {
 			else {
 
 				velAux.y = 0;
-				persoRb.velocity = velAux;
+				persoRb.velocity = velAux;//si la touche flèche bas est appuyé le personnage en état gazeux ne monte plus
 			}
 
 			break;

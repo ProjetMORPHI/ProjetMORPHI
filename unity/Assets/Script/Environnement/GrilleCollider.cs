@@ -20,12 +20,12 @@ public class GrilleCollider : MonoBehaviour {
 
 		if (joueurEtat.etatActif != GestionEtat.Etat.Solide) {
 
-			grilleCollider.enabled = false;
+			grilleCollider.enabled = false;//si le état de personnage est liquide ou gazeux ont desactive les collider des grilles
 		}
 
 		else {
 
-			grilleCollider.enabled = true;
+			grilleCollider.enabled = true;//si le état de personnage est solide on active les collider des grilles
 		}
 
 	
