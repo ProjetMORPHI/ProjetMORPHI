@@ -99,6 +99,11 @@ public class Deplacement : MonoBehaviour {
 			//vitesse de deplacement Vertical en gazeux
 			if (Input.GetAxis ("Vertical") >= 0) {
 
+				/**-------------------Pour augmenter la vitesse à laquelle le gazeux monte---------------------------**/
+				Vector3 veloActuel = persoRb.velocity; 
+				persoRb.velocity = new Vector3 (veloActuel.x , 1 , veloActuel.z);
+				/**--------------------------------------------------------------------------------------------------**/
+
 				persoRb.AddForce(Vector3.up*velGazeuxUP*Time.deltaTime,ForceMode.Impulse);//impulser vers l:haut en état gazeux
 				persoRb.useGravity = false;
 
