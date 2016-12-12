@@ -7,8 +7,8 @@ public class fantome : MonoBehaviour {
 
 	private float posX; // la position initial sur l'axe x de fantome
 
-	private float posMax=6.0f; //la limite maximum que fantôme peut se déplacer 
-	private float posMin=-6.0f;//la limite minimum que fantôme peut se déplacer 
+    public float posMax=6.0f; //la limite maximum que fantôme peut se déplacer 
+    public float posMin=-6.0f;//la limite minimum que fantôme peut se déplacer 
 
 	private float unitMax=0.0f; // La variable pour calculer la position maximum de fantôme 
 	private float unitMin=0.0f; // La variable pour calculer la position minimum de fantôme 
