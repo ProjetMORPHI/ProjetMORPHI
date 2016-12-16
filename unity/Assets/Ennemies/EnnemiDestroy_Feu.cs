@@ -12,7 +12,7 @@ public class EnnemiDestroy_Feu : MonoBehaviour {
 
     public GameObject HandleVie;
     public float dommageEnnemie;
-    public string tagPorte;
+	public string tagPorte ;
     // Use this for initialization
     void Start()
     {
@@ -26,15 +26,18 @@ public class EnnemiDestroy_Feu : MonoBehaviour {
 
     }
 
-    public void destroyEnnemi()
+    public void destroyEnnemiFeu()
     {
-
-
-        GameObject porte = GameObject.FindGameObjectWithTag(tagPorte);
-        AnimationPorteEnnemies scriptAnimPorte = porte.GetComponent<AnimationPorteEnnemies>();
-        ennemiesRestant = scriptAnimPorte.nombreEnnemies;// on se communique avec le script de la porte pour savoir combien des ennemis il manque à tuer
-        ennemiesRestant--; // on dimunue les ennemies en 1
-        scriptAnimPorte.nombreEnnemies = ennemiesRestant;//on actualise l'information des ennemies restant dans le script de la porte
+		
+		if (tagPorte!="Aucune")
+		{
+			GameObject porte = GameObject.FindGameObjectWithTag(tagPorte);
+			AnimationPorteEnnemies scriptAnimPorte = porte.GetComponent<AnimationPorteEnnemies>();
+			ennemiesRestant = scriptAnimPorte.nombreEnnemies;// on se communique avec le script de la porte pour savoir combien des ennemis il manque à tuer
+			ennemiesRestant--; // on dimunue les ennemies en 1
+			scriptAnimPorte.nombreEnnemies = ennemiesRestant;//on actualise l'information des ennemies restant dans le script de la porte
+		}
+        
         Destroy(this.transform.parent.gameObject);//une fois que l'animation est fini on detruit l'ennemi*/
     }
 
