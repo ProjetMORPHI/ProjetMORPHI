@@ -6,3 +6,25 @@ Transformation:
 État liquide: touche numérique 1
 État solide: touche numérique 2
 État gazeux: touche numérique 3
+
+Niveaux:
+
+- Niveau tutoriel (terminé)
+- Niveau 1 (terminé)
+- Niveau 2 (terminé):
+	*Le nuage toxique a été fait et il bouge à un rythme ajustable.
+	*Les obstacles ont été construit et sont fonctionnels.
+	*À la fin du niveau, le jeu se termine.
+	
+- On peut passer fluidement d'un niveau à l'autre.
+
+
+Ennemis:
+
+
+
+Tâches restantes:
+
+-Ajuster les dommage causé au joueur par les ennemis.
+-Faire en sorte que le joueur meur instantanémnent quand il touche au nuage toxique ou au piscines de poison.
+-Ajouter les vies restante du joueur au UI.
