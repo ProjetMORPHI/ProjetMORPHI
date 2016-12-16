@@ -11,6 +11,11 @@ Niveaux:
 
 - Niveau tutoriel (terminé)
 - Niveau 1 (terminé)
+	*Le niveau a des pièges dans l'environement (Pièges electriques et pièges de poison)
+	*Les pièges electriques diminuent la vie du personnage en certain quantité, les pièges de posion tues le personnage à l'instant.
+	*Il a des portes temporiser.
+	*Il a des challenges pour rammaser des objets pour être capable de continuer.
+	*à la fin de niveau on continue avec le niveau 2.
 - Niveau 2 (terminé):
 	*Le nuage toxique a été fait et il bouge à un rythme ajustable.
 	*Les obstacles ont été construit et sont fonctionnels.
@@ -20,7 +25,7 @@ Niveaux:
 
 
 Ennemis:
-
+	* Il a 3 types des ennemies, la bacterie bleu claire qui n'est pas tueable, le ennemie noir tueable dans l'état solide et le ennemie de feu tueable dans l'ètat liquide
 
 
 Tâches restantes:
