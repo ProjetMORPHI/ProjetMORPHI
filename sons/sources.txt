@@ -26,7 +26,21 @@ vent 2 : https://www.freesound.org/people/jorge0000/sounds/361053/
 vent 3 : https://www.freesound.org/people/macdaddyno1/sounds/349388/
 vent 4 : https://www.freesound.org/people/dmyra/sounds/105012/
 vent 5 : https://www.freesound.org/people/juryduty/sounds/185070/
-  
+electrocution : https://www.freesound.org/people/aust_paul/sounds/30933/
+poison : https://www.freesound.org/people/spookymodem/sounds/202094/
+poison 2 : https://www.freesound.org/people/Moggi/sounds/233584/
+ramasse bonus : https://www.freesound.org/people/Timbre/sounds/232210/
+héros mort : https://www.freesound.org/people/Lithe-Fider/sounds/9704/
+héros mort 2 : https://www.freesound.org/people/Lithe-Fider/sounds/9705/
+héros mort 3 : https://www.freesound.org/people/Lithe-Fider/sounds/9703/
+tuer ennemis : https://www.freesound.org/people/LiamG_SFX/sounds/322488/
+game over : https://www.freesound.org/people/fins/sounds/133283/
+niveau réussi : https://www.freesound.org/people/fins/sounds/133284/
+game over 2 : https://www.freesound.org/people/notchfilter/sounds/43698/
+son électrique : https://www.freesound.org/people/Glaneur%20de%20sons/sounds/34170/
+son électrique 2 : https://www.freesound.org/people/unfa/sounds/222677/
+son électrique 3 : https://www.freesound.org/people/plingativator/sounds/188902/
+
 autres: 
 
 bruit d'effervesence: http://www.universal-soundbank.com/medecine-2.htm
