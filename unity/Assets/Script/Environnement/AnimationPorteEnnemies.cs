@@ -10,6 +10,7 @@ public class AnimationPorteEnnemies : MonoBehaviour {
 
 
 	private Animation monAnimation;
+	private AudioSource sonPorte;
 	private bool animPlayed;
 
 	// Use this for initialization
@@ -17,6 +18,7 @@ public class AnimationPorteEnnemies : MonoBehaviour {
 	
 		//ouvrePort = false;
 		monAnimation = GetComponent<Animation> ();
+		sonPorte = GetComponent<AudioSource> ();
 		animPlayed = false;
 		//nombreEnnemies = 1;
 
@@ -31,6 +33,7 @@ public class AnimationPorteEnnemies : MonoBehaviour {
 		if (nombreEnnemies == 0 && !animPlayed) {
 
 			monCamera.depth = 2;
+			sonPorte.Play();
 			monAnimation.Play ();
 			animPlayed = true;
 		}

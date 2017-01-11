@@ -8,12 +8,14 @@ public class AnimationPorteButton : MonoBehaviour {
 	public bool animPlayed;// est-ce que l'animation a deja joué?
 
 	private Animation monAnimation; //animation jouer quand la porte est ouverte
+	private AudioSource sonPorte;
 
 
 	// Use this for initialization
 	void Start () {
 
 		monAnimation = GetComponent<Animation> ();
+		sonPorte = GetComponent<AudioSource> ();
 		animPlayed = false;
 
 	}
@@ -26,6 +28,7 @@ public class AnimationPorteButton : MonoBehaviour {
 		if (qBouttons==0 && !animPlayed) {
 
 			monCamera.depth = 2;//change le depth de la camera pour change la camera
+			sonPorte.Play();
 			monAnimation.Play ();//joeur l'animation
 			animPlayed = true;//L'animation est deja joué
 		}
