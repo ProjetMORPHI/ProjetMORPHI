@@ -14,8 +14,12 @@ public class EnnemiDestroy : MonoBehaviour {
 	public float dommageEnnemie;
 	public string tagPorte;
 	// Use this for initialization
+
+	private AudioSource sonBlessure;
+
 	void Start () {
 
+		sonBlessure = GetComponent<AudioSource> ();
 		//ennemiesRestant = scriptAnimPorte.nombreEnnemies;
 	}
 
@@ -45,6 +49,7 @@ public class EnnemiDestroy : MonoBehaviour {
 
 		if(monCollision.gameObject.tag == "Joueur"){//si la collision est avec le personnage principal
 
+			sonBlessure.Play ();
 			enemieForce.Set((monCollision.contacts [0].normal.x) * -80, (monCollision.contacts [0].normal.y) * -10,0);
 			monCollision.rigidbody.AddForce(enemieForce,ForceMode.Impulse);//ajout un force en direction contraire à ce de point de contact
 

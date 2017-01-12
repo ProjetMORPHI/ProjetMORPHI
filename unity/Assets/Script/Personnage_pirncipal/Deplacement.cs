@@ -7,6 +7,7 @@ public class Deplacement : MonoBehaviour {
 	public float velSolide;
 	public float velGazeux;
 	public float velGazeuxUP;
+	public AudioClip sonBonus;
 
 	//Les animator pour liquide et solide
 	public Animator animLiquide;
@@ -14,14 +15,14 @@ public class Deplacement : MonoBehaviour {
 
 	private Rigidbody persoRb;
 	private GestionEtat joueurEtat;
+	private AudioSource sonPerso;
 
 	// Use this for initialization
 	void Start () {
 
 		persoRb = GetComponent<Rigidbody>();
 		joueurEtat = gameObject.GetComponent<GestionEtat> ();
-
-
+		sonPerso = GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -121,5 +122,17 @@ public class Deplacement : MonoBehaviour {
 		}
 			
 	}
+
+
+	void OnTriggerEnter(Collider monCollider){
+
+		if (monCollider.gameObject.tag == "Bonus") {
+
+			sonPerso.clip = sonBonus;
+			sonPerso.Play ();
+		}
+			
+	}
+
 }
 
