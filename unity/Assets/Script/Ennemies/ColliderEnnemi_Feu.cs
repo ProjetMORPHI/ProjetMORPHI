@@ -7,10 +7,11 @@ public class ColliderEnnemi_Feu : MonoBehaviour {
 
 	//public GestionEtat joueurEtat;
 
-
+	private AudioSource sonTuer;
 	// Use this for initialization
 	void Start () {
 
+		sonTuer = GetComponent<AudioSource> ();
 	}
 
 	// Update is called once per frame
@@ -26,7 +27,7 @@ public class ColliderEnnemi_Feu : MonoBehaviour {
 		Debug.Log ("hello");
 		if (monCollider.gameObject.tag == "Joueur" && joueurEtat.etatActif == GestionEtat.Etat.Liquide) {
 
-
+			sonTuer.Play ();
 			animEnnemie.Play ();//on joue l'animnation pour applatir l'ennemie si lecollider est touché en état solide
 
 		}
