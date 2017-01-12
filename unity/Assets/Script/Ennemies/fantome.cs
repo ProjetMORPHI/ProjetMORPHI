@@ -16,7 +16,7 @@ public class fantome : MonoBehaviour {
 	private Vector3 enemieForce;// La variable pour reculer le personnage quand il touche le fantôme
 
 	private bool positionPositiveX = true; 
-
+	private AudioSource sonBlessure;
 
 	public GameObject HandleVie;// Handle pour le controle de la bar de vie
 	public float dommageEnnemie;
@@ -25,6 +25,7 @@ public class fantome : MonoBehaviour {
 	void Start () {
 
 		posX = this.transform.position.x; // prendre la position initial sur l'axe x de fantome
+		sonBlessure = GetComponent<AudioSource> ();
 
 	}
 
@@ -62,7 +63,7 @@ public class fantome : MonoBehaviour {
 	}
 	void OnCollisionEnter(Collision monCollision)
 	{
-
+		sonBlessure.Play ();
 		GestionEtat joueurEtat = monCollision.gameObject.GetComponent<GestionEtat>();
 		enemieForce.Set((monCollision.contacts [0].normal.x) * -80, (monCollision.contacts [0].normal.y) * -5,0);
 		monCollision.rigidbody.AddForce(enemieForce,ForceMode.Impulse);
