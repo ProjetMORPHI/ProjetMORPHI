@@ -14,12 +14,15 @@ public class GestionEtat : MonoBehaviour {
 	//Variable qui règle la durée de transformation
 	public float tempsTransfo = 5.0f;
 
+	//Variable qui contienne le clip de son de transformation
+	public AudioClip clipTransf;
 
-	private AudioSource sonTransfo;
+
+	private AudioSource sonPerso;
 	// Use this for initialization
 	void Start () {
 
-		sonTransfo = GetComponent<AudioSource> ();
+		sonPerso = GetComponent<AudioSource> ();
 	}
 
 	// Update is called once per frame
@@ -31,7 +34,8 @@ public class GestionEtat : MonoBehaviour {
 			StartCoroutine("transfoSolide");*/
 			if(etatActif != Etat.Liquide){
 
-				sonTransfo.Play ();
+				sonPerso.clip = clipTransf;
+				sonPerso.Play ();
 			}
 			transfoLiquide ();
 		}
@@ -43,7 +47,8 @@ public class GestionEtat : MonoBehaviour {
 			//StartCoroutine("transfoGazeux");*/
 			if(etatActif != Etat.Solide){
 
-				sonTransfo.Play ();
+				sonPerso.clip = clipTransf;
+				sonPerso.Play ();
 			}
 			transfoSolide();
 
@@ -56,7 +61,8 @@ public class GestionEtat : MonoBehaviour {
 			StartCoroutine("transfoGazeux");*/
 			if(etatActif != Etat.Gazeux){
 
-				sonTransfo.Play ();
+				sonPerso.clip = clipTransf;
+				sonPerso.Play ();
 			}
 			transfoGazeux();
 
