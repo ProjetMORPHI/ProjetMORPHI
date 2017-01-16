@@ -12,10 +12,10 @@ public class UIActions : MonoBehaviour {
 	void Start () {
 
 		Scene scene = SceneManager.GetActiveScene ();
-		if (scene.name == "Tutoriel" || scene.name == "Niveau2"){
+		if (scene.name == "Tutoriel")
+		{
 			Time.timeScale = 0;
-			Debug.Log ("pause");
-		} 
+		}
 
 	}
 	

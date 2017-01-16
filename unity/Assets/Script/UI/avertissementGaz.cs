@@ -10,6 +10,7 @@ public class avertissementGaz : MonoBehaviour {
 	void Start () {
 
 		Scene scene = SceneManager.GetActiveScene ();
+
 		if (scene.name == "Niveau2"){
 			Time.timeScale = 0;
 			Debug.Log ("pause");
