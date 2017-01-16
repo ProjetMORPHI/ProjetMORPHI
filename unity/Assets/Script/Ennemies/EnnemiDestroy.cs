@@ -10,7 +10,7 @@ public class EnnemiDestroy : MonoBehaviour {
 	private int ennemiesRestant;
 	private Vector3 enemieForce;
 
-	public GameObject HandleVie;
+	private GameObject HandleVie;
 	public float dommageEnnemie;
 	public string tagPorte;
 	// Use this for initialization
@@ -19,6 +19,7 @@ public class EnnemiDestroy : MonoBehaviour {
 
 	void Start () {
 
+		HandleVie = GameObject.Find("Scrollbar/Sliding Area/Handle");
 		sonBlessure = GetComponent<AudioSource> ();
 		//ennemiesRestant = scriptAnimPorte.nombreEnnemies;
 	}

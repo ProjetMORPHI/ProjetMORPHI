@@ -18,12 +18,13 @@ public class fantome : MonoBehaviour {
 	private bool positionPositiveX = true; 
 	private AudioSource sonBlessure;
 
-	public GameObject HandleVie;// Handle pour le controle de la bar de vie
+	private GameObject HandleVie;// Handle pour le controle de la bar de vie
 	public float dommageEnnemie;
 
 	// Use this for initialization
 	void Start () {
 
+		HandleVie = GameObject.Find("Scrollbar/Sliding Area/Handle");
 		posX = this.transform.position.x; // prendre la position initial sur l'axe x de fantome
 		sonBlessure = GetComponent<AudioSource> ();
 

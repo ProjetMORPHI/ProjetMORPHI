@@ -10,7 +10,7 @@ public class EnnemiDestroy_Feu : MonoBehaviour {
     private int ennemiesRestant;
     private Vector3 enemieForce;
 
-    public GameObject HandleVie;
+	private GameObject HandleVie;
     public float dommageEnnemie;
 	public string tagPorte ;
 
@@ -20,6 +20,8 @@ public class EnnemiDestroy_Feu : MonoBehaviour {
     void Start()
     {
 		sonBlessure = GetComponent<AudioSource> ();
+		HandleVie = GameObject.Find("Scrollbar/Sliding Area/Handle");
+			
         //ennemiesRestant = scriptAnimPorte.nombreEnnemies;
     }
 
