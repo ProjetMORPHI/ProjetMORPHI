@@ -90,6 +90,11 @@ public class Bouton_canvas : MonoBehaviour {
         aidIsOn = false;
 
     }
+	public void buttonAccueil()
+	{
+		SceneManager.LoadScene ("Scenes/acceuil");
+
+	}
 }
 
 internal class Button
