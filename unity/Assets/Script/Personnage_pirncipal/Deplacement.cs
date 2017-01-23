@@ -8,6 +8,7 @@ public class Deplacement : MonoBehaviour {
 	public float velGazeux;
 	public float velGazeuxUP;
 	public AudioClip sonBonus;
+	public AudioClip sonBlesse;
 
 	//Les animator pour liquide et solide
 	public Animator animLiquide;
@@ -132,6 +133,15 @@ public class Deplacement : MonoBehaviour {
 			sonPerso.Play ();
 		}
 			
+	}
+
+	void OnCollisionEnter(Collision monCollision){
+
+		if (monCollision.gameObject.name == "RayonLaser") 
+		{
+			sonPerso.clip = sonBlesse;
+			sonPerso.Play ();
+		}
 	}
 
 }
