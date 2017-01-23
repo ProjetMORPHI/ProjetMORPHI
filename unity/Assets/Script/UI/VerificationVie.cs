@@ -19,7 +19,7 @@ public class VerificationVie : MonoBehaviour {
 		if (barVie.size >= 1)
 		{
 
-			SceneManager.LoadScene ("Scenes/ecran_fin");
+			SceneManager.LoadScene ("Scenes/GameOver");
 		}
 	}
 }
