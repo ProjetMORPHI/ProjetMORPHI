@@ -23,6 +23,7 @@ public class pause : MonoBehaviour {
 				Debug.Log ("jouer");
 				panneauPause.gameObject.SetActive (false);
 				Time.timeScale = 1;
+
 			} 
 
 		}
