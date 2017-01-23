@@ -11,7 +11,7 @@ public class avertissementGaz : MonoBehaviour {
 
 		Scene scene = SceneManager.GetActiveScene ();
 
-		if (scene.name == "Niveau2"){
+		if (scene.name == "Scenes/Niveau2" || scene.name == "Niveau2"){
 			Time.timeScale = 0;
 			Debug.Log ("pause");
 		} 

@@ -12,7 +12,8 @@ public class UIActions : MonoBehaviour {
 	void Start () {
 
 		Scene scene = SceneManager.GetActiveScene ();
-		if (scene.name == "Tutoriel")
+		Debug.Log ("toto la scène est "+ scene.name);
+		if (scene.name == "Scenes/Tutoriel" || scene.name == "Tutoriel")
 		{
 			Time.timeScale = 0;
 		}
